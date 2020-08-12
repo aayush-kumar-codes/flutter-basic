@@ -18,31 +18,59 @@ import 'package:flutter/material.dart';
 //   }
 // }
 
+// void main() => runApp(PartTwo());
+
+// class PartTwo extends StatelessWidget {
+//   Widget build(BuildContext context) {
+//     return Row(
+//       textDirection: TextDirection.ltr,
+//       children: [
+//         Expanded(
+//           child: Text(
+//             'this is test row',
+//             textAlign: TextAlign.center,
+//             textDirection: TextDirection.ltr,
+//           ),
+//         ),
+//         Expanded(
+//           child: Text(
+//             'this is test row2',
+//             textAlign: TextAlign.center,
+//             textDirection: TextDirection.ltr,
+//             style: TextStyle(color: Colors.yellow, fontSize: 30.0),
+//           ),
+//         ),
+//         Expanded(
+//           child: Text(
+//             'this is test row2',
+//             textAlign: TextAlign.center,
+//             textDirection: TextDirection.ltr,
+//           ),
+//         )
+//       ],
+//     );
+//   }
+// }
+
 void main() => runApp(PartTwo());
 
 class PartTwo extends StatelessWidget {
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
       textDirection: TextDirection.ltr,
-      children: [
-        Expanded(
+      mainAxisSize: MainAxisSize.max,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Flexible(
           child: Text(
-            'this is test row',
+            'Deliver features faster2',
             textAlign: TextAlign.center,
             textDirection: TextDirection.ltr,
           ),
         ),
-        Expanded(
+        Flexible(
           child: Text(
-            'this is test row2',
-            textAlign: TextAlign.center,
-            textDirection: TextDirection.ltr,
-            style: TextStyle(color: Colors.yellow, fontSize: 30.0),
-          ),
-        ),
-        Expanded(
-          child: Text(
-            'this is test row2',
+            'Deliver features faster3',
             textAlign: TextAlign.center,
             textDirection: TextDirection.ltr,
           ),
