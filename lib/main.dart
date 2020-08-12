@@ -52,6 +52,33 @@ import 'package:flutter/material.dart';
 //   }
 // }
 
+// void main() => runApp(PartTwo());
+
+// class PartTwo extends StatelessWidget {
+//   Widget build(BuildContext context) {
+//     return Column(
+//       textDirection: TextDirection.ltr,
+//       mainAxisSize: MainAxisSize.max,
+//       mainAxisAlignment: MainAxisAlignment.center,
+//       children: <Widget>[
+//         Flexible(
+//           child: Text(
+//             'Deliver features faster2',
+//             textAlign: TextAlign.center,
+//             textDirection: TextDirection.ltr,
+//           ),
+//         ),
+//         Flexible(
+//           child: Text(
+//             'Deliver features faster3',
+//             textAlign: TextAlign.center,
+//             textDirection: TextDirection.ltr,
+//           ),
+//         )
+//       ],
+//     );
+//   }
+// }
 void main() => runApp(PartTwo());
 
 class PartTwo extends StatelessWidget {
@@ -62,19 +89,113 @@ class PartTwo extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Flexible(
-          child: Text(
-            'Deliver features faster2',
-            textAlign: TextAlign.center,
-            textDirection: TextDirection.ltr,
-          ),
-        ),
+            child: Row(
+          textDirection: TextDirection.ltr,
+          children: [
+            Expanded(
+                child: Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Text(
+                'ROW1',
+                textAlign: TextAlign.center,
+                textDirection: TextDirection.ltr,
+                style: TextStyle(color: Colors.blue, fontSize: 30.0),
+              ),
+            )),
+            Expanded(
+                child: Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Text(
+                'ROW2',
+                textAlign: TextAlign.center,
+                textDirection: TextDirection.ltr,
+                style: TextStyle(color: Colors.yellow, fontSize: 30.0),
+              ),
+            )),
+            Expanded(
+                child: Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Text(
+                'ROW3',
+                textAlign: TextAlign.center,
+                textDirection: TextDirection.ltr,
+                style: TextStyle(color: Colors.red, fontSize: 30.0),
+              ),
+            ))
+          ],
+        )),
         Flexible(
-          child: Text(
-            'Deliver features faster3',
-            textAlign: TextAlign.center,
-            textDirection: TextDirection.ltr,
-          ),
-        )
+            child: Row(
+          textDirection: TextDirection.ltr,
+          children: [
+            Expanded(
+                child: Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Text(
+                'ROW4',
+                textAlign: TextAlign.center,
+                textDirection: TextDirection.ltr,
+                style: TextStyle(color: Colors.blue, fontSize: 30.0),
+              ),
+            )),
+            Expanded(
+                child: Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Text(
+                'ROW5',
+                textAlign: TextAlign.center,
+                textDirection: TextDirection.ltr,
+                style: TextStyle(color: Colors.yellow, fontSize: 30.0),
+              ),
+            )),
+            Expanded(
+                child: Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Text(
+                'ROW6',
+                textAlign: TextAlign.center,
+                textDirection: TextDirection.ltr,
+                style: TextStyle(color: Colors.red, fontSize: 30.0),
+              ),
+            ))
+          ],
+        )),
+        Flexible(
+            child: Row(
+          textDirection: TextDirection.ltr,
+          children: [
+            Expanded(
+                child: Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Text(
+                'ROW7',
+                textAlign: TextAlign.center,
+                textDirection: TextDirection.ltr,
+                style: TextStyle(color: Colors.blue, fontSize: 30.0),
+              ),
+            )),
+            Expanded(
+                child: Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Text(
+                'ROW8',
+                textAlign: TextAlign.center,
+                textDirection: TextDirection.ltr,
+                style: TextStyle(color: Colors.yellow, fontSize: 30.0),
+              ),
+            )),
+            Expanded(
+                child: Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Text(
+                'ROW9',
+                textAlign: TextAlign.center,
+                textDirection: TextDirection.ltr,
+                style: TextStyle(color: Colors.red, fontSize: 30.0),
+              ),
+            ))
+          ],
+        )),
       ],
     );
   }
