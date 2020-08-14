@@ -41,8 +41,6 @@ class MyApp extends StatelessWidget {
                   text: 'Need to sleep',
                   colour: Colors.red,
                   time: '\u{23F1} 7:00 pm'),
-
-              //AddTodo()
             ],
           ),
         ),
@@ -199,13 +197,6 @@ class TodoList extends StatelessWidget {
                     fontSize: 14,
                   ),
                 ),
-
-                // Icon(
-                //   Icons.alarm,
-                //   textDirection: TextDirection.ltr,
-                //   color: Colors.grey[300],
-                //   size: 15,
-                // ),
                 Text(
                   time,
                   textDirection: TextDirection.ltr,
